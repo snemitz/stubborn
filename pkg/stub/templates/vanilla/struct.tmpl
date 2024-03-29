@@ -1,0 +1,8 @@
+package {{ .Pkg }}
+
+type {{ .Name }} struct {}
+{{ range $val := .Funcs }}
+func ({{ .Short }} {{ .Name }}) {{ .MethodName }}({{ .Params }}) {{ .Returns }} {
+
+}
+{{ end }}
